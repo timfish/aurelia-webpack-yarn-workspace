@@ -1,0 +1,19 @@
+{
+  "name": "aurelia-workspace",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "yarn wsrun --stages build",
+    "watch": "yarn wsrun watch"
+  },
+  "devDependencies": {
+    "wsrun": "^5.2.0"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  }
+}

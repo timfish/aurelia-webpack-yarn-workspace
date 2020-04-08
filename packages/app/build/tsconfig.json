@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "pretty": true,
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "skipLibCheck": true,
+        "lib": [
+            "es2017",
+            "dom"
+        ]
+    }
+}
