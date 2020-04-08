@@ -1,13 +1,11 @@
 import { bootstrap } from 'aurelia-bootstrapper';
 import { Aurelia } from 'aurelia-framework';
 import { App } from './app';
-import { configure as configureModule } from '@timfish/module';
+// import { configureAll as configureModule } from '@timfish/module';
 
 bootstrap(async (aurelia: Aurelia) => {
-  aurelia.use
-    .standardConfiguration()
-    .developmentLogging()
-    .feature(configureModule);
+  aurelia.use.standardConfiguration().developmentLogging();
+  // .feature(configureModule);
 
   const root = document.getElementById('app-host') as Element;
 
