@@ -11,9 +11,7 @@ export = () => {
     mode: mode,
     resolve: {
       extensions: ['.ts', '.js'],
-      modules: ['src', 'node_modules', '../../node_modules'].map((p) =>
-        resolve(__dirname, '..', p)
-      ),
+      modules: [resolve(__dirname, '..', 'src'), 'node_modules'],
       symlinks: false,
     },
     entry: { app: './src/main' },
